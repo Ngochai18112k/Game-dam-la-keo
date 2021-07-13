@@ -1,0 +1,88 @@
+@media screen and (max-width: 450px) {
+    .header {
+        max-width: 21.875rem;
+    }
+
+    .play {
+        .items {
+            .icon {
+                height: 130px;
+                width: 130px;
+
+                &--paper {
+                    transform: translateX(1.4rem);
+
+                    &:hover {
+                        transform: translateX(1.4rem) scale(1.1);
+                    }
+                }
+
+                &--rock {
+                    transform: translateX(7rem);
+
+                    &:hover {
+                        transform: translateX(7rem) scale(1.1);
+                    }
+                }
+
+                &--scissors {
+                    transform: translateX(-8.5rem) translateY(13rem);
+
+                    &:hover {
+                        transform: translateX(-8.5rem) translateY(13rem) scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .game {
+        position: relative;
+
+        &__you {
+            .icon {
+                height: 130px;
+                width: 130px;
+            }
+        }
+
+        &__play {
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-60%);
+            min-width: 15.625rem;
+        }
+
+        &__house {
+            .icon {
+                height: 130px;
+                width: 130px;
+            }
+
+            .counter {
+                height: 130px;
+                width: 130px;
+                font-size: 5rem;
+            }
+        }
+    }
+
+    .footer {
+        .attribution {
+            display: none;
+        }
+
+        button {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .modal-container {
+        .modal-box {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
